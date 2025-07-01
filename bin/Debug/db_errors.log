@@ -1,0 +1,18 @@
+[2025/6/30 1:49:11] 操作: 数据库连接失败
+错误消息: ERROR [IM002] [Microsoft][ODBC 驱动程序管理器] 未发现数据源名称并且未指定默认驱动程序
+错误代码: -2146232009
+SQL状态: IM002
+Native错误: 0
+堆栈跟踪:    在 System.Data.Odbc.OdbcConnection.HandleError(OdbcHandle hrHandle, RetCode retcode)
+   在 System.Data.Odbc.OdbcConnectionHandle..ctor(OdbcConnection connection, OdbcConnectionString constr, OdbcEnvironmentHandle environmentHandle)
+   在 System.Data.Odbc.OdbcConnectionOpen..ctor(OdbcConnection outerConnection, OdbcConnectionString connectionOptions)
+   在 System.Data.Odbc.OdbcConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.Odbc.OdbcConnection.Open()
+   在 liymis01.sqlConnect..ctor() 位置 C:\Users\34252\OneDrive\Desktop\2024-2025（3）数据库系统课程设计要求\应用系统\LiyMIS01\sqlConnect.cs:行号 28
+----------------------------------------
